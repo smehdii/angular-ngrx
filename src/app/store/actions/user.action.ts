@@ -3,9 +3,9 @@ import { IUser } from "../../models/user.interface";
 
 export enum EUserAcions {
   GetUsers = "[User] Get Users",
-  GetUsersSuccess = "[User] Get Users",
+  GetUsersSuccess = "[User] Get Users Success",
   GetUser = "[User] Get User",
-  GetUserSuccess = "[User] Get Users"
+  GetUserSuccess = "[User] Get UsersSuccess"
 }
 
 export class GetUsers implements Action {
