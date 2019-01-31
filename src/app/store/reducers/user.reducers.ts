@@ -1,5 +1,5 @@
 import { UserActions, EUserActions } from "../actions/user.action";
-import { IUserState, initialUserState } from "../states/user.state";
+import { IUserState, initialUserState } from "../state/user.state";
 
 export const userReducers = (
   state = initialUserState,

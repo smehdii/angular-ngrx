@@ -1,5 +1,5 @@
 import { ConfigActions, EConfigAcions } from "../actions/config.action";
-import { intialConfigState, IConfigState } from "../states/config.state";
+import { intialConfigState, IConfigState } from "../state/config.state";
 
 export const configReducers = (
   state = intialConfigState,
