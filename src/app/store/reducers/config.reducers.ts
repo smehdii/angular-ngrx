@@ -1,4 +1,4 @@
-import { ConfigActions, EConfigAcions } from "../actions/config.action";
+import { ConfigActions, EConfigActions } from "../actions/config.actions";
 import { intialConfigState, IConfigState } from "../state/config.state";
 
 export const configReducers = (
@@ -6,7 +6,7 @@ export const configReducers = (
   action: ConfigActions
 ): IConfigState => {
   switch (action.type) {
-    case EConfigAcions.GetConfigSuccess: {
+    case EConfigActions.GetConfigSuccess: {
       return {
         ...state,
         config: action.paylaod

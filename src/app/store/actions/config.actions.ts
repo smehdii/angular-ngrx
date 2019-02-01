@@ -1,18 +1,18 @@
 import { Action } from "@ngrx/store";
 import { IConfig } from "../../models/config.interface";
 
-export enum EConfigAcions {
+export enum EConfigActions {
   GetConfig = "[Config] Get Config",
   GetConfigSuccess = "[Config] Get Config Success"
 }
 
 export class GetConfig implements Action {
-  public readonly type = EConfigAcions.GetConfig;
+  public readonly type = EConfigActions.GetConfig;
   constructor(public paylaod: number) {}
 }
 
 export class GetConfigSuccess implements Action {
-  public readonly type = EConfigAcions.GetConfigSuccess;
+  public readonly type = EConfigActions.GetConfigSuccess;
   constructor(public paylaod: IConfig) {}
 }
 

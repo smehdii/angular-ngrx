@@ -9,7 +9,7 @@ import {
   GetUsersSuccess,
   GetUser,
   GetUserSuccess
-} from "../actions/user.action";
+} from "../actions/user.actions";
 import { switchMap, map, withLatestFrom } from "rxjs/operators";
 import { of } from "rxjs";
 import { IUserHttp } from "../../models/http-models/user-http.interface";

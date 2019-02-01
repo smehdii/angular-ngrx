@@ -1,4 +1,4 @@
-import { UserActions, EUserActions } from "../actions/user.action";
+import { UserActions, EUserActions } from "../actions/user.actions";
 import { IUserState, initialUserState } from "../state/user.state";
 
 export const userReducers = (
