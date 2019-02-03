@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: "http://localhost:4200/assets/data/"
+  apiUrl: "http://localhost:4200/assets/data/",
+  apiMovieUrl: "http://www.omdbapi.com/?apikey=69cd60f3&s=marvel"
 };
 
 /*

@@ -1,3 +1,4 @@
-<p>
-  movies works!
-</p>
+<app-movies
+  [movies]="movies$ | async"
+  (movieSelected)="navigateToMovie($event)"
+></app-movies>

@@ -17,8 +17,11 @@ import { UsersComponent as UsersContainerComponent } from "./containers/users/us
 import { UsersComponent } from "./components/users/users.component";
 import { UserComponent } from "./containers/user/user.component";
 import { UserDetailsComponent } from "./components/user-details/user-details.component";
-import { MoviesComponent } from "./containers/movies/movies.component";
+import { MoviesComponent as MoviesContainer } from "./containers/movies/movies.component";
 import { MovieComponent } from "./containers/movie/movie.component";
+import { MovieDetailsComponent } from "./components/movie-details/movie-details.component";
+import { MoviesComponent } from "./components/movies/movies.component";
+import { MovieEffects } from "./store/effects/movie.effects";
 
 @NgModule({
   declarations: [
@@ -28,13 +31,15 @@ import { MovieComponent } from "./containers/movie/movie.component";
     UsersContainerComponent,
     UserDetailsComponent,
     MoviesComponent,
-    MovieComponent
+    MoviesContainer,
+    MovieComponent,
+    MovieDetailsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     StoreModule.forRoot(appReducers),
-    EffectsModule.forRoot([UserEffects, ConfigEffects]),
+    EffectsModule.forRoot([UserEffects, ConfigEffects, MovieEffects]),
     StoreRouterConnectingModule.forRoot({ stateKey: "router" }),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
     AppRoutingModule
