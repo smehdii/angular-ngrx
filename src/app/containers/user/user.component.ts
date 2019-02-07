@@ -1,9 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 import { Store, select } from "@ngrx/store";
-import { IAppState } from "../../store/state/app.state";
 import { ActivatedRoute } from "@angular/router";
 import { selectSelectedUser } from "../../store/selectors/user.selector";
 import { GetUser } from "../../store/actions/user.actions";
+import { IAppState } from "../../store/reducers/app.reducers";
 
 @Component({
   selector: "app-user",

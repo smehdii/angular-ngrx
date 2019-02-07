@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Store, select } from "@ngrx/store";
-import { IAppState } from "../../store/state/app.state";
+import { IAppState } from "../../store/reducers/app.reducers";
 import { Router } from "@angular/router";
 import { GetUsers } from "../../store/actions/user.actions";
 import { selectUserList } from "../../store/selectors/user.selector";

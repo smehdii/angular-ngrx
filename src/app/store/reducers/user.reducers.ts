@@ -1,5 +1,16 @@
 import { UserActions, EUserActions } from "../actions/user.actions";
-import { IUserState, initialUserState } from "../state/user.state";
+
+import { IUser } from "../../models/user.interface";
+
+export interface IUserState {
+  users: IUser[];
+  selectedUser: IUser;
+}
+
+export const initialUserState: IUserState = {
+  users: null,
+  selectedUser: null
+};
 
 export const userReducers = (
   state = initialUserState,

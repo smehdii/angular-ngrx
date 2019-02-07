@@ -1,5 +1,15 @@
-import { initialMovieState } from "../state/movie.state";
 import { MovieActions, EMovieActions } from "../actions/movie.actions";
+import { IMovie } from "../../models/movie.interface";
+
+export interface IMovieState {
+  movies: IMovie[];
+  selectedMovie: IMovie;
+}
+
+export const initialMovieState: IMovieState = {
+  movies: null,
+  selectedMovie: null
+};
 
 export const movieReducers = (
   state = initialMovieState,

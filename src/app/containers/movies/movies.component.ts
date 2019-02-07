@@ -1,9 +1,9 @@
 import { Component, OnInit } from "@angular/core";
-import { IAppState } from "../../store/state/app.state";
 import { Store, select } from "@ngrx/store";
 import { Router } from "@angular/router";
 import { GetMovies } from "../../store/actions/movie.actions";
 import { selectMovieList } from "../../store/selectors/movie.selector";
+import { IAppState } from "../../store/reducers/app.reducers";
 
 @Component({
   templateUrl: "./movies.component.html",

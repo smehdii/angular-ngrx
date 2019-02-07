@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Effect, Actions, ofType } from "@ngrx/effects";
 import { UserService } from "../../services/user.service";
-import { IAppState } from "../state/app.state";
+import { IAppState } from "../../store/reducers/app.reducers";
 import { Store, select } from "@ngrx/store";
 import {
   GetUsers,

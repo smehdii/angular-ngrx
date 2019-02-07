@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Actions, Effect, ofType } from "@ngrx/effects";
 import { Store, select } from "@ngrx/store";
-import { IAppState } from "../state/app.state";
+import { IAppState } from "../../store/reducers/app.reducers";
 import { MovieService } from "../../services/movie.service";
 import {
   GetMovies,

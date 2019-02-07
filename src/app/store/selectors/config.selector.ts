@@ -1,6 +1,6 @@
-import { IAppState } from "../state/app.state";
 import { createSelector } from "@ngrx/store";
-import { IConfigState } from "../state/config.state";
+import { IConfigState } from "../reducers/config.reducers";
+import { IAppState } from "../reducers/app.reducers";
 
 // export interface IAppState {
 // router?: RouterReducerState;
